@@ -28,15 +28,16 @@ main {
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 350px;
     border: 1px solid #bbb;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.26);
 }
+
 #comparacao {
     display: none;
 }
@@ -52,20 +53,35 @@ main {
     align-items: center;
 }
 
-
 input {
-    width: 250px;
+    width: 121px;
     padding: 10px;
     font-size: 20px;
     margin: 5px;
-    border-radius: 4px;
-    background-color: black;
+    border-radius: 5px;
+    background-color: #000;
     color: aliceblue;
 }
 /* Para tirar a setas de número do input number */
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
+}
+
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.arrows:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 button {
